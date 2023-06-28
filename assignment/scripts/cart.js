@@ -5,7 +5,13 @@ console.log('***** Cart Functions *****');
 let basket = [];
 console.log('Items in basket:', basket);
 
-
+function addItem(item){
+    if (basket < 20){
+        console.log(basket.push(item), 'has been added to basket')}
+    else if (basket >= 20){
+        console.log('basket is full')
+    }
+    }
 
 
 
