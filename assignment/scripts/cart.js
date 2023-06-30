@@ -22,7 +22,7 @@ console.log('Basket items are:', basket)
 
 function listItems(item){
  let i = 0;
-    if (item++ && item == basket[i] && item < basket.length){
+    if (item++ && item == basket && item < basket.length){
         console.log('Items in basket are:', item)
     return true;}
     else (item == false || item == undefined);{
@@ -32,7 +32,11 @@ function listItems(item){
 
 listItems()
 
-function empty(){}
+function empty(basket){
+if (basket >= 0){
+    console.log(basket.pop(basket.indexOf), 'Has been removed.')
+}   
+}
 
 
 
