@@ -20,24 +20,25 @@ console.log('Want to add peas', addItem( 'Peas'))
 
 console.log('Basket items are:', basket)
 
-function listItems(item){
- let i = 0;
-    if (item++ && item == basket && item < basket.length){
-        console.log('Items in basket are:', item)
-    return true;}
-    else (item == false || item == undefined);{
-        console.log('basket appears empty')
-    return false;}
+console.log('basket length is', basket.length)
+
+function listItems(){
+for (let i=0; i < basket.length; i++){
+    console.log('Items in basket are:', basket[i])
+}
 }
 
-listItems()
+console.log('Items in basket are:', listItems());
 
-function empty(basket){
-if (basket >= 0){
-    console.log(basket.pop(basket.indexOf), 'Has been removed.')
-}   
-}
+// function empty(basket){
+//     for (let i=0; i < 20; i++){
+//         if (basket[i] >= 0){
+//     console.log(basket.pop(item), 'Has been removed.')}
+//     else {console.log('basket already empty')} 
+//     }}
 
+// empty()
+// console.log('Items in basket are:', basket)
 
 
 
